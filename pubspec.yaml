@@ -1,0 +1,49 @@
+name: quizflip
+description: "QuizFlip – offline flashcard study app for all platforms."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  equatable: ^2.0.5
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/QuizFlip.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/QuizFlip.png
+  adaptive_icon_background: "#0C7D69"
+  adaptive_icon_foreground: assets/images/QuizFlip.png
+  web:
+    generate: true
+    image_path: assets/images/QuizFlip.png
+    background_color: "#0C7D69"
+    theme_color: "#0C7D69"
+  windows:
+    generate: true
+    image_path: assets/images/QuizFlip.png
+    icon_size: 256
+  macos:
+    generate: true
+    image_path: assets/images/QuizFlip.png
